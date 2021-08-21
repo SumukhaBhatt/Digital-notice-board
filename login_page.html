@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login page</title>
+<script  src="login_page.js"></script>
+<style>
+body{
+background-image:url("image/back.jpg");
+background-size:cover;
+opacity: 10;
+filter: alpha(opacity=50);
+}
+#division{
+background-color:lightgreen;
+margin-left:550px;
+margin-right:650px;
+margin-top:150px;
+box-shadow: 5px 10px 10px 10px grey;
+}
+
+img{
+height:30px;
+width:30px;
+}
+td{
+opacity: 10;
+text-align:center;
+padding:15px;
+color: #ff0066;
+}
+.inpt{
+font-family:"roboto",sans-seriff;
+outline:1;
+background: #f2f2f2;
+width:100%;
+height:30px;
+}
+#b:hover{
+background-color:lightblue;
+}
+</style>
+</head>
+<body style="background-color:#cceeff;">
+<div id="division" >
+<table >
+<tr ><td colspan="2"><img src="/image/login_image.png"/><h2>Login</h2></td></tr>
+<tr><td colspan="2"><input type="radio" name="person" checked=true value="student" />Student<input type="radio" name="person" value="teacher" />teacher
+<input type="radio" name="person" value="admin" />admin</td></tr>
+<tr><td><img src="/image/login_user.png"/></td>
+<td><input name="user_name" class="inpt" type="text" placeholder="USER NAME"/ required></td></tr>
+<tr><td><img src="/image/login_pass.png"/></td>
+<td><input name="password" class="inpt" type="password" placeholder="PASSWORD"/ required></td></tr>
+<tr><td colspan="2"><input type="checkbox" />Remember me <a href="/forget_password.html" title="forget password"> forget password</a></td></tr> 
+<tr><td colspan="2"><input class="inpt" id="b" type="button" style="padding-left:10px;padding-right:10px;" value="Login" onclick="verify();"/></td></tr>
+<tr><td colspan="2">new user? <a href="/login_newuser.html">click here</a></td></tr>
+</table>
+</div>
+</body>
+</html>

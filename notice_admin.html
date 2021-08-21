@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple College Notification Board</title>
+<style>
+body{
+background-color:white;#80ff80;
+}
+</style>
+<script>
+</script>
+</head>
+<body id="body" style="background:lightblue;">
+<font size="5">
+<div class="container">
+	<div id="content" align="center">
+		<form action="notifyexec.php" method="post">
+		<h1 id="title">Simple College Notice Board</h1><hr/>
+		<p>Choose Where To Send The Notice</p>
+		<input type="checkbox" id="student" onclick="check('student')">Student<input type="checkbox" id="teacher" onclick="check('teacher')">Teacher<br/><br/>
+		Message<br>
+		<textarea type="text" id="message" rows="15" cols="80" class="form-control"></textarea><br/><br/>
+		<input type="button" style="background:green; padding:5px;color:white; padding-left:20px;padding-right:20px" value="SEND" id="button1" onclick="add_to_server()">
+		</form></font>
+	</div><hr/>
+	</div>
+	<script  src="notice_admin.js"></script>
+	</body>
+	</html>

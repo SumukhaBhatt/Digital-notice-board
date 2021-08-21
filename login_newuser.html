@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login page</title>
+<script  src="login_newuser.js"></script>
+<style>
+body{
+background-image:url("image/back.jpg");
+background-size:cover;
+opacity: 10;
+filter: alpha(opacity=50);
+}
+#division{
+background-color:lightgreen;
+margin-left:500px;
+margin-right:500px;
+margin-top:110px;
+}
+
+img{
+height:60px;
+width:60px;
+}
+td{
+
+opacity: 10;
+text-align:center;
+padding:8px;
+color: #ff0066;
+}
+.t{
+width:75%;
+height:100%;
+height:30px;
+}
+.b{
+padding:10px;
+padding-left:60px;
+padding-right:60px;
+}
+.b:hover
+{
+background-color:lightblue;
+}
+</style>
+</head>
+<body style="background-color:#cceeff;">
+<div id="division" >
+<form id="form" action="login_newuser.php" method="post" >
+<table >
+<tr ><td colspan="2"><img src="/image/login_image.png"/><h2>New User</h2></td></tr>
+<tr><td colspan="2"><input  class="t" type="text" required name="user_name" placeholder="USER NAME" onblur="check_username();"/></td></tr>
+<tr><td colspan="2"><input class="t" type="password" required name="password1" placeholder="PASSWORD" /></td></tr>
+<tr><td colspan="2"><input class="t" type="password" required name="password2" placeholder="CONFIRM PASSWORD" /></td></tr>
+<tr><td colspan="2"><input type="radio" name="person" checked=true value="student" onclick="check_username();"/>Student<input type="radio" name="person" value="teacher" onclick="check_username();"/>teacher</td></tr>
+<tr><td><select name="question"><option  value="What is your nick name">What is your nick name</option><option value="What is your school name">What is your school name</option>
+<option value="What is your faviret food name" >What is your faviret food name</option></select></td><td><input type="text" class="t" name="answer" required  placeholder="Enter the answer"/></td></tr>
+<tr><td colspan="2"><input class="b" type="button" value="Create" onclick="validate();" /></td></tr>
+<tr><td colspan="2">goto login page? <a href="/login_page.html">click here</a></td></tr>
+</table>
+</form>
+</div>
+</body>
+</html>
